@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1 class="site-title">LEONARDO CANINA MARCHIORI</h1>
+            <p class="subtitle">Portfólio</p>
+            <div class="separator"></div>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#formacao">Formação</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#experiencia">Experiência</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-wrapper">
+        <section id="sobre">
+            <div class="container">
+                <div class="sobre-mim">
+                    <div class="foto-frame">
+                        <img src="imecc.jpeg" class="foto-perfil" alt="Foto de perfil">
+                    </div>
+                    <div class="sobre-informacoes">
+                        <h2>Sobre Mim</h2>
+                        <p>Estou atualmente cursando o Ensino Médio junto ao curso de Desenvolvimento de Sistemas no SENAI. Busco unir a lógica da programação com soluções práticas para o mercado e novos projetos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="formacao">
+            <div class="container">
+                <h2>Minha Formação</h2>
+
+                <div id="formacao-main-grid" class="card-grid">
+                    
+                    <article class="vintage-card clickable-card" onclick="abrirSubdivisao('formacao', 'unicamp')">
+                        <div class="card-image-wrapper">
+                            <img src="unicamp.png" alt="UNICAMP" />
+                        </div>
+                        <div class="card-content">
+                            <span class="card-date gold">Certificação & Extensão</span>
+                            <h3 class="card-title">UNICAMP</h3>
+                            <p class="card-description">Cursos, programas de extensão e qualificações acadêmicas realizadas na Universidade Estadual de Campinas.</p>
+                            <span class="click-hint"><i class="fa-solid fa-arrow-right"></i> Ver detalhes</span>
+                        </div>
+                        <div class="card-stats gold-bg">
+                            <div class="stat"><span class="value">UNICAMP</span><span class="label">INSTITUIÇÃO</span></div>
+                            <div class="stat"><span class="value">Extensão</span><span class="label">ÁREA</span></div>
+                            <div class="stat"><span class="value">+Cursos</span><span class="label">DETALHES</span></div>
+                        </div>
+                    </article>
+
+                    <article class="vintage-card clickable-card" onclick="abrirSubdivisao('formacao', 'cursos')">
+                        <div class="card-image-wrapper">
+                            <img src="https://picsum.photos/id/1043/600/400" alt="Cursos" />
+                        </div>
+                        <div class="card-content">
+                            <span class="card-date bronze">Capacitação</span>
+                            <h3 class="card-title">Cursos</h3>
+                            <p class="card-description">Cursos livres, especializações e capacitações técnicas extracurriculares concluídas.</p>
+                            <span class="click-hint"><i class="fa-solid fa-arrow-right"></i> Ver detalhes</span>
+                        </div>
+                        <div class="card-stats bronze-bg">
+                            <div class="stat"><span class="value">Diversas</span><span class="label">INSTITUIÇÃO</span></div>
+                            <div class="stat"><span class="value">Livre</span><span class="label">ÁREA</span></div>
+                            <div class="stat"><span class="value">Aprovado</span><span class="label">STATUS</span></div>
+                        </div>
+                    </article>
+
+                    <article class="vintage-card clickable-card" onclick="abrirSubdivisao('formacao', 'medio')">
+                        <div class="card-image-wrapper">
+                            <img src="https://picsum.photos/id/1025/600/400" alt="Ensino Médio" />
+                        </div>
+                        <div class="card-content">
+                            <span class="card-date dark">Formação Básica</span>
+                            <h3 class="card-title">Ensino Médio</h3>
+                            <p class="card-description">Formação em andamento visando o mercado de trabalho e ingresso nas melhores universidades.</p>
+                            <span class="click-hint"><i class="fa-solid fa-arrow-right"></i> Ver detalhes</span>
+                        </div>
+                        <div class="card-stats dark-bg">
+                            <div class="stat"><span class="value">SESI</span><span class="label">INSTITUIÇÃO</span></div>
+                            <div class="stat"><span class="value">Geral</span><span class="label">ÁREA</span></div>
+                            <div class="stat"><span class="value">Cursando</span><span class="label">STATUS</span></div>
+                        </div>
+                    </article>
+
+                    <article class="vintage-card clickable-card" onclick="abrirSubdivisao('formacao', 'ds')">
+                        <div class="card-image-wrapper">
+                            <img src="https://picsum.photos/id/1060/600/400" alt="Desenvolvimento de Sistemas" />
+                        </div>
+                        <div class="card-content">
+                            <span class="card-date bronze">Técnico SENAI</span>
+                            <h3 class="card-title">Desenvolvimento de Sistemas</h3>
+                            <p class="card-description">Formação voltada para programação, desenvolvimento de sistemas full stack, banco de dados e projetos.</p>
+                            <span class="click-hint"><i class="fa-solid fa-arrow-right"></i> Ver detalhes</span>
+                        </div>
+                        <div class="card-stats bronze-bg">
+                            <div class="stat"><span class="value">SENAI</span><span class="label">INSTITUIÇÃO</span></div>
+                            <div class="stat"><span class="value">FullStack</span><span class="label">ÁREA</span></div>
+                            <div class="stat"><span class="value">Cursando</span><span class="label">STATUS</span></div>
+                        </div>
+                    </article>
+
+                    <article class="vintage-card clickable-card" onclick="abrirSubdivisao('formacao', 'servicenow')">
+                        <div class="card-image-wrapper">
+                            <img src="https://picsum.photos/id/1018/600/400" alt="ServiceNow" />
+                        </div>
+                        <div class="card-content">
+                            <span class="card-date gold">Certificação</span>
+                            <h3 class="card-title">Service Now</h3>
+                            <p class="card-description">Desenvolvimento e análise de sistemas com ServiceNow. Certificação para utilização da ferramenta.</p>
+                            <span class="click-hint"><i class="fa-solid fa-arrow-right"></i> Ver detalhes</span>
+                        </div>
+                        <div class="card-stats gold-bg">
+                            <div class="stat"><span class="value">Análise</span><span class="label">SISTEMAS</span></div>
+                            <div class="stat"><span class="value">SaaS</span><span class="label">PLATA</span></div>
+                            <div class="stat"><span class="value">Ativo</span><span class="label">STATUS</span></div>
+                        </div>
+                    </article>
+
+                    <article class="vintage-card clickable-card" onclick="abrirSubdivisao('formacao', 'ingles')">
+                        <div class="card-image-wrapper">
+                            <img src="https://picsum.photos/id/1040/600/400" alt="Inglês Extra" />
+                        </div>
+                        <div class="card-content">
+                            <span class="card-date dark">Idiomas</span>
+                            <h3 class="card-title">Linguas Estrangeiras</h3>
+                            <p class="card-description">Aulas extras de linguas estrangeiras visando o preparo para a internacionalização e comunicação técnica.</p>
+                            <span class="click-hint"><i class="fa-solid fa-arrow-right"></i> Ver detalhes</span>
+                        </div>
+                        <div class="card-stats dark-bg">
+                            <div class="stat"><span class="value">Diversas</span><span class="label">INSTITUIÇÃO</span></div>
+                            <div class="stat"><span class="value">Global</span><span class="label">ÁREA</span></div>
+                            <div class="stat"><span class="value">Contínuo</span><span class="label">STATUS</span></div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div id="subdivisao-formacao-unicamp" class="subdivision-wrapper hidden">
+                    <div class="subdivision-header">
+                        <button class="back-btn" onclick="fecharSubdivisao('formacao', 'unicamp')"><i class="fa-solid fa-arrow-left"></i> Voltar à Formação</button>
+                        <h3 class="sub-title">UNICAMP — Cursos & Extensão</h3>
+                    </div>
+                    <div class="card-grid">
+                        <article class="vintage-card">
+                            <div class="card-image-wrapper"><img src="https://picsum.photos/id/1015/600/400" alt="Curso 1" /></div>
+                            <div class="card-content">
+                                <span class="card-date gold">Certificado</span>
+                                <h3 class="card-title">Matemática</h3>
+                                <p class="card-description">Aulas focadas no aprimoramento das habilidades matemáticas básicas e avançadas.</p>
+                            </div>
+                            <div class="card-stats gold-bg">
+                                <div class="stat"><span class="value">4 Dias</span><span class="label">CARGA</span></div>
+                                <div class="stat"><span class="value">UNICAMP</span><span class="label">LOCAL</span></div>
+                                <div class="stat"><span class="value">2024</span><span class="label">STATUS</span></div>
+                            </div>
+                        </article>
+                        <article class="vintage-card">
+                            <div class="card-image-wrapper"><img src="https://picsum.photos/id/1016/600/400" alt="Curso 2" /></div>
+                            <div class="card-content">
+                                <span class="card-date bronze">Certificado</span>
+                                <h3 class="card-title">Lógica & Algoritmos</h3>
+                                <p class="card-description">Aprofundamento em raciocínio lógico, estruturas de dados e algoritmos gerais.</p>
+                            </div>
+                            <div class="card-stats bronze-bg">
+                                <div class="stat"><span class="value">60h</span><span class="label">CARGA</span></div>
+                                <div class="stat"><span class="value">UNICAMP</span><span class="label">LOCAL</span></div>
+                                <div class="stat"><span class="value">2025</span><span class="label">STATUS</span></div>
+                            </div>
+                        </article>
+                        <article class="vintage-card">
+                            <div class="card-image-wrapper"><img src="https://picsum.photos/id/1015/600/400" alt="Curso 1" /></div>
+                            <div class="card-content">
+                                <span class="card-date gold">Certificado</span>
+                                <h3 class="card-title">Engenharia aeronáutica</h3>
+                                <p class="card-description">Curso focado nos conceitos fundamentais de aeronáutica e práticas laboratoriais.</p>
+                            </div>
+                            <div class="card-stats gold-bg">
+                                <div class="stat"><span class="value">40h</span><span class="label">CARGA</span></div>
+                                <div class="stat"><span class="value">UNICAMP</span><span class="label">LOCAL</span></div>
+                                <div class="stat"><span class="value">2024</span><span class="label">STATUS</span></div>
+                            </div>
+                        </article>
+                        <article class="vintage-card">
+                            <div class="card-image-wrapper"><img src="https://picsum.photos/id/1015/600/400" alt="Curso 1" /></div>
+                            <div class="card-content">
+                                <span class="card-date gold">Certificado</span>
+                                <h3 class="card-title">Biologia</h3>
+                                <p class="card-description">Curso focado nos conceitos fundamentais de biologia e citologia.</p>
+                            </div>
+                            <div class="card-stats gold-bg">
+                                <div class="stat"><span class="value">40h</span><span class="label">CARGA</span></div>
+                                <div class="stat"><span class="value">UNICAMP</span><span class="label">LOCAL</span></div>
+                                <div class="stat"><span class="value">2024</span><span class="label">STATUS</span></div>
+                            </div>
+                        </article>
+                        <article class="vintage-card">
+                            <div class="card-image-wrapper"><img src="https://picsum.photos/id/1015/600/400" alt="Curso 1" /></div>
+                            <div class="card-content">
+                                <span class="card-date gold">Certificado</span>
+                                <h3 class="card-title">Física</h3>
+                                <p class="card-description">Curso focado nos conceitos fundamentais de física básica, aplicada e nuclear.</p>
+                            </div>
+                            <div class="card-stats gold-bg">
+                                <div class="stat"><span class="value">40h</span><span class="label">CARGA</span></div>
+                                <div class="stat"><span class="value">UNICAMP</span><span class="label">LOCAL</span></div>
+                                <div class="stat"><span class="value">2024</span><span class="label">STATUS</span></div>
+                            </div>
+                        </article>
+                        <article class="vintage-card">
+                            <div class="card-image-wrapper"><img src="https://picsum.photos/id/1015/600/400" alt="Curso 1" /></div>
+                            <div class="card-content">
+                                <span class="card-date gold">Certificado</span>
+                                <h3 class="card-title">Computação</h3>
+                                <p class="card-description">Curso focado nos conceitos fundamentais de química aplicada e práticas laboratoriais.</p>
+                            </div>
+                            <div class="card-stats gold-bg">
+                                <div class="stat"><span class="value">40h</span><span class="label">CARGA</span></div>
+                                <div class="stat"><span class="value">UNICAMP</span><span class="label">LOCAL</span></div>
+                                <div class="stat"><span class="value">2024</span><span class="label">STATUS</span></div>
+                            </div>
+                        </article>
+                        <article class="vintage-card">
+                            <div class="card-image-wrapper"><img src="https://picsum.photos/id/1015/600/400" alt="Curso 1" /></div>
+                            <div class="card-content">
+                                <span class="card-date gold">Certificado</span>
+                                <h3 class="card-title">Ciencias Humanas</h3>
+                                <p class="card-description">Curso focado nos conceitos fundamentais de química aplicada e práticas laboratoriais.</p>
+                            </div>
+                            <div class="card-stats gold-bg">
+                                <div class="stat"><span class="value">40h</span><span class="label">CARGA</span></div>
+                                <div class="stat"><span class="value">UNICAMP</span><span class="label">LOCAL</span></div>
+                                <div class="stat"><span class="value">2024</span><span class="label">STATUS</span></div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                
+
+                <div id="subdivisao-formacao-cursos" class="subdivision-wrapper hidden">
+                    <div class="subdivision-header">
+                        <button class="back-btn" onclick="fecharSubdivisao('formacao', 'cursos')"><i class="fa-solid fa-arrow-left"></i> Voltar à Formação</button>
+                        <h3 class="sub-title">Cursos Complementares</h3>
+                    </div>
+                    <div class="card-grid">
+                        <article class="vintage-card">
+                            <div class="card-image-wrapper"><img src="https://picsum.photos/id/1043/600/400" alt="Química" /></div>
+                            <div class="card-content">
+                                <span class="card-date bronze">Módulo 1</span>
+                                <h3 class="card-title">Curso de Química</h3>
+                                <p class="card-description">Práticas de laboratório, manuseio de reagentes e fundamentos de química geral.</p>
+                            </div>
+                            <div class="card-stats bronze-bg">
+                                <div class="stat"><span class="value">Prático</span><span class="label">TIPO</span></div>
+                                <div class="stat"><span class="value">Ciência</span><span class="label">ÁREA</span></div>
+                                <div class="stat"><span class="value">Concluído</span><span class="label">STATUS</span></div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div id="subdivisao-formacao-medio" class="subdivision-wrapper hidden">
+                    <div class="subdivision-header">
+                        <button class="back-btn" onclick="fecharSubdivisao('formacao', 'medio')"><i class="fa-solid fa-arrow-left"></i> Voltar à Formação</button>
+                        <h3 class="sub-title">Ensino Médio — Áreas</h3>
+                    </div>
+                    <div class="card-grid">
+                        <article class="vintage-card">
+                            <div class="card-image-wrapper"><img src="https://picsum.photos/id/1025/600/400" alt="Exatas" /></div>
+                            <div class="card-content">
+                                <span class="card-date dark">Foco</span>
+                                <h3 class="card-title">Ciências da Natureza & Exatas</h3>
+                                <p class="card-description">Preparação intensiva em Física, Química e Matemática voltada para vestibular e lógica.</p>
+                            </div>
+                            <div class="card-stats dark-bg">
+                                <div class="stat"><span class="value">Exatas</span><span class="label">ÁREA</span></div>
+                                <div class="stat"><span class="value">Alta</span><span class="label">MÉDIA</span></div>
+                                <div class="stat"><span class="value">Cursando</span><span class="label">STATUS</span></div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div id="subdivisao-formacao-ds" class="subdivision-wrapper hidden">
+                    <div class="subdivision-header">
+                        <button class="back-btn" onclick="fecharSubdivisao('formacao', 'ds')"><i class="fa-solid fa-arrow-left"></i> Voltar à Formação</button>
+                        <h3 class="sub-title">Dev. de Sistemas SENAI — Módulos</h3>
+                    </div>
+                    <div class="card-grid">
+                        <article class="vintage-card">
+                            <div class="card-image-wrapper"><img src="https://picsum.photos/id/1060/600/400" alt="FrontEnd" /></div>
+                            <div class="card-content">
+                                <span class="card-date bronze">Módulo 1</span>
+                                <h3 class="card-title">Desenvolvimento Web</h3>
+                                <p class="card-description">Criação de interfaces modernas utilizando HTML5, CSS3, JavaScript e Git.</p>
+                            </div>
+                            <div class="card-stats bronze-bg">
+                                <div class="stat"><span class="value">Web</span><span class="label">FOCO</span></div>
+                                <div class="stat"><span class="value">FrontEnd</span><span class="label">ÁREA</span></div>
+                                <div class="stat"><span class="value">Concluído</span><span class="label">STATUS</span></div>
+                            </div>
+                        </article>
+                        <article class="vintage-card">
+                            <div class="card-image-wrapper"><img src="https://picsum.photos/id/1018/600/400" alt="BackEnd" /></div>
+                            <div class="card-content">
+                                <span class="card-date bronze">Módulo 2</span>
+                                <h3 class="card-title">Banco de Dados & Lógica</h3>
+                                <p class="card-description">Modelagem de dados SQL, algoritmos e estrutura de software back-end.</p>
+                            </div>
+                            <div class="card-stats bronze-bg">
+                                <div class="stat"><span class="value">SQL</span><span class="label">BD</span></div>
+                                <div class="stat"><span class="value">BackEnd</span><span class="label">ÁREA</span></div>
+                                <div class="stat"><span class="value">Cursando</span><span class="label">STATUS</span></div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div id="subdivisao-formacao-servicenow" class="subdivision-wrapper hidden">
+                    <div class="subdivision-header">
+                        <button class="back-btn" onclick="fecharSubdivisao('formacao', 'servicenow')"><i class="fa-solid fa-arrow-left"></i> Voltar à Formação</button>
+                        <h3 class="sub-title">ServiceNow — Certificação</h3>
+                    </div>
+                    <div class="card-grid">
+                        <article class="vintage-card">
+                            <div class="card-image-wrapper"><img src="https://picsum.photos/id/1018/600/400" alt="ServiceNow" /></div>
+                            <div class="card-content">
+                                <span class="card-date gold">Certificado</span>
+                                <h3 class="card-title">System Administration</h3>
+                                <p class="card-description">Configuração, gestão de fluxos de trabalho e administração da plataforma ServiceNow.</p>
+                            </div>
+                            <div class="card-stats gold-bg">
+                                <div class="stat"><span class="value">CSA</span><span class="label">SIGLA</span></div>
+                                <div class="stat"><span class="value">SaaS</span><span class="label">TIPO</span></div>
+                                <div class="stat"><span class="value">Ativo</span><span class="label">STATUS</span></div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div id="subdivisao-formacao-ingles" class="subdivision-wrapper hidden">
+                    <div class="subdivision-header">
+                        <button class="back-btn" onclick="fecharSubdivisao('formacao', 'ingles')"><i class="fa-solid fa-arrow-left"></i> Voltar à Formação</button>
+                        <h3 class="sub-title">Inglês — Competências</h3>
+                    </div>
+                    <div class="card-grid">
+                        <article class="vintage-card">
+                            <div class="card-image-wrapper"><img src="https://picsum.photos/id/1040/600/400" alt="Ingles Tecnico" /></div>
+                            <div class="card-content">
+                                <span class="card-date dark">Técnico</span>
+                                <h3 class="card-title">Leitura & Escrita Técnica</h3>
+                                <p class="card-description">Compreensão de documentações de software, artigos e escrita corporativa.</p>
+                            </div>
+                            <div class="card-stats dark-bg">
+                                <div class="stat"><span class="value">B2/C1</span><span class="label">NÍVEL</span></div>
+                                <div class="stat"><span class="value">Tech</span><span class="label">FOCO</span></div>
+                                <div class="stat"><span class="value">Ativo</span><span class="label">STATUS</span></div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="projetos">
+            <div class="container">
+                <h2>Meus Projetos</h2>
+
+                <div id="projetos-main-grid" class="card-grid">
+                    
+                    <article class="vintage-card clickable-card" onclick="abrirSubdivisao('projetos', 'movea')">
+                        <div class="card-image-wrapper">
+                            <img src="https://picsum.photos/id/1058/600/400" alt="Projeto MOVEA" />
+                        </div>
+                        <div class="card-content">
+                            <span class="card-date bronze">Líder de Dev</span>
+                            <h3 class="card-title">Projeto MOVEA</h3>
+                            <p class="card-description">Líder de desenvolvimento do projeto MOVEA, unindo as escolas de Amparo para disputar modalidades e focar na saúde.</p>
+                            <span class="click-hint"><i class="fa-solid fa-arrow-right"></i> Ver detalhes</span>
+                        </div>
+                        <div class="card-stats bronze-bg">
+                            <div class="stat"><span class="value">2026</span><span class="label">ANO</span></div>
+                            <div class="stat"><span class="value">Amparo</span><span class="label">LOCAL</span></div>
+                            <div class="stat"><span class="value">Saúde</span><span class="label">FOCO</span></div>
+                        </div>
+                    </article>
+
+                    <article class="vintage-card clickable-card" onclick="abrirSubdivisao('projetos', 'sesi')">
+                        <div class="card-image-wrapper">
+                            <img src="https://picsum.photos/id/1050/600/400" alt="Sesi Esporte Amparo" />
+                        </div>
+                        <div class="card-content">
+                            <span class="card-date gold">Campeão</span>
+                            <h3 class="card-title">Sesi Esporte</h3>
+                            <p class="card-description">Líder do projeto vencedor do Shark Tank Sesi/Senai 2026. Portal focado em incentivo ao esporte na escola.</p>
+                            <span class="click-hint"><i class="fa-solid fa-arrow-right"></i> Ver detalhes</span>
+                        </div>
+                        <div class="card-stats gold-bg">
+                            <div class="stat"><span class="value">1º</span><span class="label">LUGAR</span></div>
+                            <div class="stat"><span class="value">SharkTank</span><span class="label">EVENTO</span></div>
+                            <div class="stat"><span class="value">Web</span><span class="label">TIPO</span></div>
+                        </div>
+                    </article>
+
+                    <article class="vintage-card clickable-card" onclick="abrirSubdivisao('projetos', 'integrador')">
+                        <div class="card-image-wrapper">
+                            <img src="https://picsum.photos/id/1062/600/400" alt="Projeto Integrador" />
+                        </div>
+                        <div class="card-content">
+                            <span class="card-date dark">Full-Stack</span>
+                            <h3 class="card-title">Projeto Integrador</h3>
+                            <p class="card-description">Principal organizador e desenvolvedor da matéria LER, aplicando os conhecimentos aprendidos no 1º sem. de DS.</p>
+                            <span class="click-hint"><i class="fa-solid fa-arrow-right"></i> Ver detalhes</span>
+                        </div>
+                        <div class="card-stats dark-bg">
+                            <div class="stat"><span class="value">SENAI</span><span class="label">LOCAL</span></div>
+                            <div class="stat"><span class="value">1º Sem</span><span class="label">PERÍODO</span></div>
+                            <div class="stat"><span class="value">Grupo</span><span class="label">EQUIPE</span></div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div id="subdivisao-projetos-movea" class="subdivision-wrapper hidden">
+                    <div class="subdivision-header">
+                        <button class="back-btn" onclick="fecharSubdivisao('projetos', 'movea')"><i class="fa-solid fa-arrow-left"></i> Voltar aos Projetos</button>
+                        <h3 class="sub-title">MOVEA — Sub-módulos</h3>
+                    </div>
+                    <div class="card-grid">
+                        <article class="vintage-card">
+                            <div class="card-image-wrapper"><img src="https://picsum.photos/id/1058/600/400" alt="Plataforma Web" /></div>
+                            <div class="card-content">
+                                <span class="card-date bronze">Front-End</span>
+                                <h3 class="card-title">Portal do Competidor</h3>
+                                <p class="card-description">Interface interativa onde os alunos acompanham pontuações e jogos das escolas.</p>
+                            </div>
+                            <div class="card-stats bronze-bg">
+                                <div class="stat"><span class="value">Web</span><span class="label">TIPO</span></div>
+                                <div class="stat"><span class="value">Amparo</span><span class="label">RECURSO</span></div>
+                                <div class="stat"><span class="value">Ativo</span><span class="label">STATUS</span></div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div id="subdivisao-projetos-sesi" class="subdivision-wrapper hidden">
+                    <div class="subdivision-header">
+                        <button class="back-btn" onclick="fecharSubdivisao('projetos', 'sesi')"><i class="fa-solid fa-arrow-left"></i> Voltar aos Projetos</button>
+                        <h3 class="sub-title">Sesi Esporte — Shark Tank</h3>
+                    </div>
+                    <div class="card-grid">
+                        <article class="vintage-card">
+                            <div class="card-image-wrapper"><img src="https://picsum.photos/id/1050/600/400" alt="Pitch" /></div>
+                            <div class="card-content">
+                                <span class="card-date gold">Inovação</span>
+                                <h3 class="card-title">Pitch & Apresentação</h3>
+                                <p class="card-description">Apresentação vencedora no evento Shark Tank Sesi/Senai com plano de negócios.</p>
+                            </div>
+                            <div class="card-stats gold-bg">
+                                <div class="stat"><span class="value">1º</span><span class="label">PRÊMIO</span></div>
+                                <div class="stat"><span class="value">Banca</span><span class="label">AVALIAÇÃO</span></div>
+                                <div class="stat"><span class="value">2026</span><span class="label">ANO</span></div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div id="subdivisao-projetos-integrador" class="subdivision-wrapper hidden">
+                    <div class="subdivision-header">
+                        <button class="back-btn" onclick="fecharSubdivisao('projetos', 'integrador')"><i class="fa-solid fa-arrow-left"></i> Voltar aos Projetos</button>
+                        <h3 class="sub-title">Projeto Integrador — Etapas</h3>
+                    </div>
+                    <div class="card-grid">
+                        <article class="vintage-card">
+                            <div class="card-image-wrapper"><img src="https://picsum.photos/id/1062/600/400" alt="LER" /></div>
+                            <div class="card-content">
+                                <span class="card-date dark">Módulo LER</span>
+                                <h3 class="card-title">Organização da Matéria LER</h3>
+                                <p class="card-description">Consolidação de documentação técnica, diagramas e arquitetura do software.</p>
+                            </div>
+                            <div class="card-stats dark-bg">
+                                <div class="stat"><span class="value">SENAI</span><span class="label">INST</span></div>
+                                <div class="stat"><span class="value">100%</span><span class="label">ENTREGA</span></div>
+                                <div class="stat"><span class="value">Concluído</span><span class="label">STATUS</span></div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="experiencia">
+            <div class="container">
+                <h2>Experiência Profissional</h2>
+                <div class="experiencia-box">
+                    <div class="experiencia-item">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <div>
+                            <h3>Freelancer como vendedor</h3>
+                            <span class="local">Empório das Capas — Amparo-SP</span>
+                            <p>Atendimento direto ao público, vendas e suporte operacional.</p>
+                        </div>
+                    </div>
+                    <div class="experiencia-item">
+                        <i class="fa-solid fa-wrench"></i>
+                        <div>
+                            <h3>Assistência de Smartphones</h3>
+                            <span class="local">Manutenção de Dispositivos</span>
+                            <p>Auxiliar de assistência técnica para aparelhos celulares, smartwatches e tablets.</p>
+                        </div>
+                    </div>
+                    <div class="experiencia-item">
+                        <i class="fa-solid fa-feather-pointed"></i>
+                        <div>
+                            <h3>Confecção de TCCs</h3>
+                            <span class="local">Apoio Acadêmico</span>
+                            <p>Realização e suporte na estruturação de TCCs aprovados pelos orientadores.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="hobbies">
+            <div class="container">
+                <h2>Meus Hobbies</h2>
+                <div class="hobbies-container">
+                    <div class="hobby">
+                        <i class="fa-solid fa-person-biking"></i>
+                        <h3>Esportes</h3>
+                        <p>Praticar esportes como vôlei, futebol, tênis de mesa, ciclismo e musculação.</p>
+                    </div>
+                    <div class="hobby">
+                        <i class="fa-solid fa-headset"></i>
+                        <h3>Jogos</h3>
+                        <p>Sempre que possível, jogar com amigos e trabalhar raciocínio estratégico.</p>
+                    </div>
+                    <div class="hobby">
+                        <i class="fa-solid fa-flag-checkered"></i>
+                        <h3>Automobilismo</h3>
+                        <p>Paixão de criança em acompanhar corridas das mais diversas categorias.</p>
+                    </div>
+                    <div class="hobby">
+                        <i class="fa-solid fa-people-group"></i>
+                        <h3>Família e Amigos</h3>
+                        <p>Passar tempo de qualidade com pessoas próximas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="container">
+                <h2>Entre em Contato</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" required></textarea>
+                    </div>
+                    <button type="submit">Enviar mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Portfólio Pessoal. Desenvolvido com tradição e estilo.</p>
+    </footer>
+
+    <script>
+        function abrirSubdivisao(secao, id) {
+            document.getElementById(secao + '-main-grid').classList.add('hidden');
+            
+            const target = document.getElementById('subdivisao-' + secao + '-' + id);
+            if (target) {
+                target.classList.remove('hidden');
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+
+        function fecharSubdivisao(secao, id) {
+            const target = document.getElementById('subdivisao-' + secao + '-' + id);
+            if (target) {
+                target.classList.add('hidden');
+            }
+            
+            const mainGrid = document.getElementById(secao + '-main-grid');
+            mainGrid.classList.remove('hidden');
+            mainGrid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    </script>
+
+</body>
+</html>
